@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // This dependency is used by the application.
+    implementation 'com.google.guava:guava:28.0-jre'
+    compile 'org.eclipse.jgit:jgit.tycho.parent:3.4.1.201406201815-r'
+
+}
+
+application {
+    // Define the main class for the application
+    mainClassName = 'br.ufjf.dcc099.minerepo.App'
+}
